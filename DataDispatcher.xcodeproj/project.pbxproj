@@ -10,6 +10,7 @@
 		D118CE6B1726D7B000C719EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D118CE6A1726D7B000C719EB /* Foundation.framework */; };
 		D118CE701726D7B000C719EB /* DataDispatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D118CE6F1726D7B000C719EB /* DataDispatcher.h */; };
 		D118CE721726D7B000C719EB /* DataDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D118CE711726D7B000C719EB /* DataDispatcher.m */; };
+		DE764421D14D4E7BB632AFA5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5A180526FE410F9496DADD /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A5A180526FE410F9496DADD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		52519ED1F2C24A449B8BE81D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		D118CE671726D7B000C719EB /* libDataDispatcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDataDispatcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D118CE6A1726D7B000C719EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D118CE6E1726D7B000C719EB /* DataDispatcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataDispatcher-Prefix.pch"; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D118CE6B1726D7B000C719EB /* Foundation.framework in Frameworks */,
+				DE764421D14D4E7BB632AFA5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 				D118CE6C1726D7B000C719EB /* DataDispatcher */,
 				D118CE691726D7B000C719EB /* Frameworks */,
 				D118CE681726D7B000C719EB /* Products */,
+				52519ED1F2C24A449B8BE81D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				D118CE6A1726D7B000C719EB /* Foundation.framework */,
+				3A5A180526FE410F9496DADD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,6 +104,7 @@
 				D118CE631726D7B000C719EB /* Sources */,
 				D118CE641726D7B000C719EB /* Frameworks */,
 				D118CE651726D7B000C719EB /* CopyFiles */,
+				685D82C9801F4C2989FB8359 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +140,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		685D82C9801F4C2989FB8359 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D118CE631726D7B000C719EB /* Sources */ = {
@@ -201,25 +225,29 @@
 		};
 		D118CE761726D7B000C719EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52519ED1F2C24A449B8BE81D /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/DataDispatcher.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DataDispatcher/DataDispatcher-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
 		D118CE771726D7B000C719EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52519ED1F2C24A449B8BE81D /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/DataDispatcher.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DataDispatcher/DataDispatcher-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -242,6 +270,7 @@
 				D118CE771726D7B000C719EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
