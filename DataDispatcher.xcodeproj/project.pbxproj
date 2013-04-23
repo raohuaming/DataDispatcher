@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D118CE6B1726D7B000C719EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D118CE6A1726D7B000C719EB /* Foundation.framework */; };
+		D118CE701726D7B000C719EB /* DataDispatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D118CE6F1726D7B000C719EB /* DataDispatcher.h */; };
+		D118CE721726D7B000C719EB /* DataDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D118CE711726D7B000C719EB /* DataDispatcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D118CE651726D7B000C719EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				D118CE701726D7B000C719EB /* DataDispatcher.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D118CE671726D7B000C719EB /* libDataDispatcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDataDispatcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D118CE6A1726D7B000C719EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D118CE6E1726D7B000C719EB /* DataDispatcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataDispatcher-Prefix.pch"; sourceTree = "<group>"; };
+		D118CE6F1726D7B000C719EB /* DataDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDispatcher.h; sourceTree = "<group>"; };
+		D118CE711726D7B000C719EB /* DataDispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataDispatcher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D118CE641726D7B000C719EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D118CE6B1726D7B000C719EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D118CE5E1726D7B000C719EB = {
+			isa = PBXGroup;
+			children = (
+				D118CE6C1726D7B000C719EB /* DataDispatcher */,
+				D118CE691726D7B000C719EB /* Frameworks */,
+				D118CE681726D7B000C719EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D118CE681726D7B000C719EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D118CE671726D7B000C719EB /* libDataDispatcher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D118CE691726D7B000C719EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D118CE6A1726D7B000C719EB /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D118CE6C1726D7B000C719EB /* DataDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				D118CE6F1726D7B000C719EB /* DataDispatcher.h */,
+				D118CE711726D7B000C719EB /* DataDispatcher.m */,
+				D118CE6D1726D7B000C719EB /* Supporting Files */,
+			);
+			path = DataDispatcher;
+			sourceTree = "<group>";
+		};
+		D118CE6D1726D7B000C719EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D118CE6E1726D7B000C719EB /* DataDispatcher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D118CE661726D7B000C719EB /* DataDispatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D118CE751726D7B000C719EB /* Build configuration list for PBXNativeTarget "DataDispatcher" */;
+			buildPhases = (
+				D118CE631726D7B000C719EB /* Sources */,
+				D118CE641726D7B000C719EB /* Frameworks */,
+				D118CE651726D7B000C719EB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataDispatcher;
+			productName = DataDispatcher;
+			productReference = D118CE671726D7B000C719EB /* libDataDispatcher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D118CE5F1726D7B000C719EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Huaming Rao";
+			};
+			buildConfigurationList = D118CE621726D7B000C719EB /* Build configuration list for PBXProject "DataDispatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D118CE5E1726D7B000C719EB;
+			productRefGroup = D118CE681726D7B000C719EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D118CE661726D7B000C719EB /* DataDispatcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D118CE631726D7B000C719EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D118CE721726D7B000C719EB /* DataDispatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D118CE731726D7B000C719EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D118CE741726D7B000C719EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D118CE761726D7B000C719EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DataDispatcher.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataDispatcher/DataDispatcher-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D118CE771726D7B000C719EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DataDispatcher.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataDispatcher/DataDispatcher-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D118CE621726D7B000C719EB /* Build configuration list for PBXProject "DataDispatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D118CE731726D7B000C719EB /* Debug */,
+				D118CE741726D7B000C719EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D118CE751726D7B000C719EB /* Build configuration list for PBXNativeTarget "DataDispatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D118CE761726D7B000C719EB /* Debug */,
+				D118CE771726D7B000C719EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D118CE5F1726D7B000C719EB /* Project object */;
+}
